@@ -1,4 +1,4 @@
-package com.hexware.clara
+package com.hexware.battleground
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.hexware.clara.ui.theme
+package com.hexware.battleground.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
