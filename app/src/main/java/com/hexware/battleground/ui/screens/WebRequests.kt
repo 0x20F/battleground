@@ -10,6 +10,10 @@ import java.io.IOException
 fun WebRequests() {
     Text("You're looking at the web requests example now")
 
+    simpleCallOkHTTP()
+}
+
+fun simpleCallOkHTTP() {
     val client = OkHttpClient()
 
     val request = Request.Builder()
