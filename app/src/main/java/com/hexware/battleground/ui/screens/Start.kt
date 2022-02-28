@@ -12,6 +12,5 @@ import com.hexware.battleground.concerns.Screen
 fun StartScreen() {
     Button(onClick = { Container.navigate(Screen.WebRequests.route) }) {
         Text(text = "Web Requests Module")
-
     }
 }
