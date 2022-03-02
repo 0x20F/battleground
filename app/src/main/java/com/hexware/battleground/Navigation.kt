@@ -17,6 +17,9 @@ fun Navigation() {
     val actions = ScreenActions(navController = controller)
     Container.withNavigation(actions)
 
+    // For now this is fine since it's just a single view
+    // model. The more we got the more we should consider using
+    // hilt and injecting them.
     val reqVm = WebRequestsViewModel()
 
     NavHost(
