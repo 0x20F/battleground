@@ -9,6 +9,7 @@ import com.hexware.battleground.concerns.Screen
 import com.hexware.battleground.concerns.ScreenActions
 import com.hexware.battleground.ui.screens.StartScreen
 import com.hexware.battleground.ui.screens.WebRequests
+import com.hexware.battleground.ui.screens.WebRequestsViewModel
 
 @Composable
 fun Navigation() {
@@ -16,11 +17,13 @@ fun Navigation() {
     val actions = ScreenActions(navController = controller)
     Container.withNavigation(actions)
 
+    val reqVm = WebRequestsViewModel()
+
     NavHost(
         navController = controller,
         startDestination = Screen.Start.route
     ) {
         composable(Screen.Start.route) { StartScreen() }
-        composable(Screen.WebRequests.route) { WebRequests() }
+        composable(Screen.WebRequests.route) { WebRequests(reqVm) }
     }
 }
